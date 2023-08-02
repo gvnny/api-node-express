@@ -1,0 +1,22 @@
+{
+  "name": "api-node-express",
+  "version": "1.0.0",
+  "description": "API node com Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "API",
+    "JavaScript",
+    "Node",
+    "Express",
+    "RestFull"
+  ],
+  "author": "Geovanny Nascimento Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
