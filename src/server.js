@@ -1,19 +1,25 @@
 import express from 'express';
+import bodyParser from 'body-parser';
+
 import { PORT } from './config.js';
 import userRouter from './router/userRouter.js';
-import productRouter from './router/productRoute.js'
+import productRouter from './router/productRoute.js';
+import logger from './middlewares/logger.js';
 
 const api = express();
+
+api.use(logger);
+api.use(bodyParser.json());
 
 api.get ('/', (req, res) => {
     res.json({menssage: 'Bem-vindo a API'});
 });
 
-api.use('/user', userRouter);
+api.use('/user', logger, userRouter);
 
 api.use('/product', productRouter);
 
-api.all('*', (req, res) => {
+api.all('*', logger, (req, res) => {
     res.status(404).json({massege: 'Rota não encontrada'});
 })
 

@@ -12,7 +12,12 @@ router.get ('/', (req, res) => {
 });
 
 router.post ('/', (req, res) => {
-    res.json({menssage: 'Produto criado com sucesso'});
+    const dados = req.body;
+    console.log(dados.nome);
+    res.json({
+        menssage: 'Produto criado com sucesso',
+        dados: dados
+    });
 });
 
 router.put ('/', (req, res) => {
