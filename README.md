@@ -14,7 +14,9 @@
 
 - npm run {nome do script} (Roda o comando definido no script do package.json)
 
-- npm install {nome do pacote} (Instala os pacotes)
+- npm install {nome do pacote} (Instala os pacotes / produção)
+
+- npm install -D {nome do pacote} (Instala os pacotes / desenvolvimento)
 
 ### GIT
 
@@ -27,3 +29,15 @@
 - git init (Inicia o git em um repositório)
 
 - git remote add origin {url do repositório} (Conecta o repositório físico do computador com o remoto)
+
+- git status (Mostra o status atual dos arquivos)
+
+- git add . (Adiciona os arquivos alterados no stage)
+
+- git commit - m "" (Regitra a mudança)
+
+- git push (Envia os commits para o github)
+
+- git pull (Puxa a versão mais atual do projeto no repositório do github)
+
+- git fetch (Verifica a existencia de novos commits)

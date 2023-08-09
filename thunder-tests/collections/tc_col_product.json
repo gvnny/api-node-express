@@ -1,0 +1,65 @@
+{
+    "_id": "6caa830e-2477-4df3-98ab-b3f841f11790",
+    "colName": "/product",
+    "created": "2023-08-09T00:24:41.685Z",
+    "sortNum": 20000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "25608c24-07e4-4792-a704-8affece5ef78",
+            "colId": "6caa830e-2477-4df3-98ab-b3f841f11790",
+            "containerId": "",
+            "name": "/product",
+            "url": "http://localhost:3000/product",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-09T00:24:41.689Z",
+            "modified": "2023-08-09T00:24:41.689Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0105963b-59e8-4521-9973-676982960d8e",
+            "colId": "6caa830e-2477-4df3-98ab-b3f841f11790",
+            "containerId": "",
+            "name": "/product",
+            "url": "http://localhost:3000/product",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-09T00:25:08.013Z",
+            "modified": "2023-08-09T00:25:08.013Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9599826e-2def-4a1a-b174-c481824f62dc",
+            "colId": "6caa830e-2477-4df3-98ab-b3f841f11790",
+            "containerId": "",
+            "name": "/product",
+            "url": "http://localhost:3000/product",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-08-09T00:25:25.773Z",
+            "modified": "2023-08-09T00:25:25.773Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8bccb9f5-0292-4c92-b2d4-f30ed52fb7b0",
+            "colId": "6caa830e-2477-4df3-98ab-b3f841f11790",
+            "containerId": "",
+            "name": "/product",
+            "url": "http://localhost:3000/product",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-08-09T00:25:39.757Z",
+            "modified": "2023-08-09T00:25:39.757Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
