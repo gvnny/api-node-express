@@ -1,31 +1,8 @@
 import express  from 'express'
+import createProduct from '../controllers/product/createProduct.js';
 
 const router = express.Router();
 
-router.get ('/', (req, res) => {
-    const users = [
-        {id: 1, name: "Mala"},
-        {id: 2, name: "Lápis"},
-        {id: 3, name: "Feijão"},
-    ];
-    res.json(users);
-});
-
-router.post ('/', (req, res) => {
-    const dados = req.body;
-    console.log(dados.nome);
-    res.json({
-        menssage: 'Produto criado com sucesso',
-        dados: dados
-    });
-});
-
-router.put ('/', (req, res) => {
-    res.json({menssage: 'Produto atualizado com sucesso'});
-});
-
-router.delete ('/', (req, res) => {
-    res.json({menssage: 'Produto apagado com sucesso'});
-});
+router.post('/', createProduct);
 
 export default router;

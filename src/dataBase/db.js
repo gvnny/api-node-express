@@ -4,10 +4,10 @@ const pool = mysql.createPool({
     host: 'localhost',
     user: 'root', 
     password: '',
-    database: 'api-node',
+    database: 'api-node-express',
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
-});
+}); 
 
 export default pool;

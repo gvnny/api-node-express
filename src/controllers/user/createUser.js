@@ -2,13 +2,12 @@ import user from '../../models/userModel.js'
 
 const createUser = async (req, res) => {
     try {
-        const user = req.body;
-        const res = await user.create(req.body);
-        const [result] = res;
+        const [result] = await user.create(req.body);
         if(result.affectedRows === 1){
             res.status(201).json({message: 'User created', 
                 user: {
                     id: result.insertId,
+                    ...req.body
                 }
             });    
         }
