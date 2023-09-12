@@ -6,6 +6,13 @@
 - O que é uma API?
 - Para que serve o FrameWork Express?
 - O que o padrão de projeto Middleware?
+    Forma de organização sequencial, usando funções. A partir de um recebimento vc pode implementar funções midlewares e depois retornar (podendo repetir esse processo). Acioana uma etapa.
+
+- Oque é o padão MVC?
+    Organizar o projeto em camadas:
+    M -> Regras de negocio, lógicaa
+    V -> 
+    C -> 
 
 # Comandos
 

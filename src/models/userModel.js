@@ -5,8 +5,8 @@ const list = async () => {
 }
 
 const create = async (user) => {
-    const{name, email, pass} = user;
-    return await db.query('INSERT INTO users (name, email, pass) VALUES (?, ?, ?)', [name, email, pass]);
+    const{name, email, pass, avatar} = user;
+    return await db.query('INSERT INTO users (name, email, pass, avatar) VALUES (?, ?, ?, ?)', [name, email, pass, avatar]);
 }
 
 const deleteUser = async (user) => {
@@ -15,8 +15,8 @@ const deleteUser = async (user) => {
 }
 
 const update = async (user) => {
-    const{id, name, email, pass} = user;
-    return await db.query('UPDATE users SET name=?, email=?, pass=? WHERE id=?', [name, email, pass, id]);
+    const{id, name, email, pass, avatar} = user;
+    return await db.query('UPDATE users SET name=?, email=?, pass=?, avatar=? WHERE id=?', [name, email, pass, avatar, id]);
 }
 
 const getUserById = async (user) => {
