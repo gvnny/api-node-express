@@ -5,7 +5,7 @@ const createProduct = async (req, res) => {
         const [result] = await  product.create(req.body);
         if(result.affectedRows === 1) {
             res.status(201).json({
-                message: 'Product created',
+                success: 'Product created',
                 product: {
                 ...req.body
                 }
@@ -13,7 +13,7 @@ const createProduct = async (req, res) => {
         }
     } catch (err) {
         console.log(err);
-        res.status(500).json({message: 'Server error'});
+        res.status(500).json({error: 'Server error'});
     }
 }
 
